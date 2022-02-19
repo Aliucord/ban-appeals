@@ -1,0 +1,37 @@
+name: Ban Appeal
+description: If you were banned on join or for Nitro Scams, fill out this form
+labels: [up for grabs]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Account
+      description: Your Discord Tag
+      placeholder: username#0000
+    validations:
+      required: true
+  - type: dropdown
+    id: ban-reason
+    attributes:
+      label: Why were you banned?
+      multiple: false
+      options:
+        - Automatically on join
+        - Nitro Scam
+    validations:
+      required: true
+  - type: checkboxes
+    id: secured-account
+    attributes:
+      label: Secured Account
+      description: In case the reason were nitro scams, have you secured your account (changed password and fully reinstalled Discord on Desktop) 
+      options:
+        - label: I have secured my account
+          required: false
+  - type: input
+    id: alt-reason
+    attributes:
+      label: Reason for making a new Account
+      description: If you were banned on join, it means that your account was younger than 2 days. Since this is clearly an alt, please state the reasoning for trying to join on an alt
+    validations:
+      required: false
