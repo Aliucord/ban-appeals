@@ -28,7 +28,7 @@ body:
       options:
         - label: I have secured my account
           required: false
-  - type: input
+  - type: textarea
     id: alt-reason
     attributes:
       label: Reason for making a new Account
