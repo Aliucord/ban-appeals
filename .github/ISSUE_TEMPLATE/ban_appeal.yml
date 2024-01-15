@@ -6,8 +6,8 @@ body:
     id: discord
     attributes:
       label: Discord Account
-      description: Your Discord Tag
-      placeholder: username#0000
+      description: Your Discord User ID
+      placeholder: "1234567890"
     validations:
       required: true
   - type: dropdown
@@ -18,6 +18,7 @@ body:
       options:
         - Automatically on join
         - Nitro Scam
+        - You were hacked
     validations:
       required: true
   - type: checkboxes
@@ -32,6 +33,6 @@ body:
     id: alt-reason
     attributes:
       label: Reason for making a new Account
-      description: If you were banned on join, it means that your account was younger than 2 days. Since this is clearly an alt, please state the reasoning for trying to join on an alt
+      description: If you were banned on join, it means that your account was younger than 2 days. Since this is clearly an alt, please state the reasoning for trying to join on an alt. We ban new accounts as the majority of them are used for ban evasion or raiding.
     validations:
       required: false
